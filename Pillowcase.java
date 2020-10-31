@@ -37,32 +37,33 @@ void getCandy(){
   int randomNum = r.nextInt(101)+1;
   System.out.println(randomNum);
 
+  count = randomNum;
+
 if ( randomNum>=1 && randomNum<=7){
-      totalCandy.add(new Candy(0,"Kit Kat"));
+      totalCandy.add(new Candy("Kit Kat"));
         }
   else if (randomNum>=8 && randomNum<=15){
-     totalCandy.add(new Candy(1,"Milky Way"));
+     totalCandy.add(new Candy("Milky Way"));
         }
   else if (randomNum>=16 && randomNum<=25){
-        totalCandy.add(new Candy(2,"M&Ms"));
+        totalCandy.add(new Candy("M&Ms"));
         }
   else if (randomNum>=26 && randomNum<=38){
-        totalCandy.add(new Candy(3,"Twix"));
+        totalCandy.add(new Candy("Twix"));
         }
   else if (randomNum>=39 && randomNum<=55){
-        totalCandy.add(new Candy(4,"Hershey's Bar"));
+        totalCandy.add(new Candy("Hershey's Bar"));
         }
   else if (randomNum>=56 && randomNum<=75){
-        totalCandy.add(new Candy(5, "Pink Starbursts"));
-        }
-  else if (randomNum>=76 && randomNum<=100){
-        totalCandy.add(new Candy (6, "Reese's"));
-        }
-  else {
-    System.out.println("Try again");
+        totalCandy.add(new Candy("Pink Starbursts"));
   }
+        
+  else if (randomNum>=76 && randomNum<=100){
+        totalCandy.add(new Candy ("Reese's"));
+        }
+  else {    System.out.println("Try again");  }
 
-}}
+}
 
 /*
 void printTest() {
@@ -75,28 +76,37 @@ void printTest() {
 
 
 //print out how much of each candy you have (ex: 5 Twix)
-//void printNumCandies(){
-//  int counter[] = new int[7];
+void printNumCandies(){
+  Candy candies = new Candy();
+  int counter[] = new int[7];
 //for loop here
-//if (candy.get(0).getBrand().equals("Kit Kat")){ counter[0]++;}
 
-//if (candy.get(1).getBrand().equals("Milky Way")){ counter[0]++;}
-
-//if (candy.get(2).getBrand().equals("M&Ms") ){ counter[0]++;}
-
-//if (candy.get(3).getBrand().equals("Twix")){ counter[0]++;}
-
-//if (candy.get(4).getBrand().equals("Hershey's Bar") ){ counter[0]++;}
-
-//if (candy.get(5).getBrand().equals("Pink Starbursts") ){ counter[0]++;}//
-
-//if (candy.get(6).getBrand().equals("Reese's")){ counter[0]++;}
-////
+    if (candies.getBrand().equals("Kit Kat")){ counter[0]++;}
+    if (candies.getBrand().equals("Milky Way")){ counter[1]++;}
+    if (candies.getBrand().equals("M&Ms") ){ counter[2]++;}
+    if (candies.getBrand().equals("Twix")){ counter[3]++;}
+    if (candies.getBrand().equals("Hershey's Bar") ){ counter[4]++;}
+    if (candies.getBrand().equals("Pink Starbursts") ){ counter[5]++;}
+    if (candies.getBrand().equals("Reese's")){ counter[6]++;}
 
 
+    System.out.println("We have " + count + " candies.");
+    System.out.println(counter[0] + " Kit Kat");
+    System.out.println(counter[1] + " Milk Way");
+    System.out.println(counter[2] + " M&Ms");
+    System.out.println(counter[3] + " Twix");
+    System.out.println(counter[4] + " Hershey's Bar");
+    System.out.println(counter[5] + " Pink Starbursts");
+    System.out.println(counter[6] + " Reese's");
 
 
 
+
+
+
+}
+
+}
 
 
 

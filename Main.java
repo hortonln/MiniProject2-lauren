@@ -7,15 +7,15 @@ class Main {
     int num;
 
     System.out.println("Happy Halloween! How many houses should we trick or treat at?");
-    num = s.nextLine();
+    num = s.nextInt();
 
 
     Pillowcase myPillowcase = new Pillowcase();
-    //myPillowcase.getCandy(); //Kit Kat
-   // myPillowcase.getCandy(); //
-   // myPillowcase.getCandy();
-   // myPillowcase.getCandy();
-   // myPillowcase.getCandy();
+    myPillowcase.getCandy(); //Kit Kat
+    myPillowcase.getCandy(); //
+    myPillowcase.getCandy();
+    myPillowcase.getCandy();
+    myPillowcase.getCandy();
    
 
 
