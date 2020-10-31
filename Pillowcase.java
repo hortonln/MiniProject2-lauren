@@ -35,11 +35,10 @@ void getCandy(){
 
   Random r = new Random();
   int randomNum = r.nextInt(101)+1;
-  System.out.println(randomNum);
-
+  
   count = randomNum;
 
-if ( randomNum>=1 && randomNum<=7){
+if (randomNum>=1 && randomNum<=7){
       totalCandy.add(new Candy("Kit Kat"));
         }
   else if (randomNum>=8 && randomNum<=15){
@@ -65,21 +64,13 @@ if ( randomNum>=1 && randomNum<=7){
 
 }
 
-/*
-void printTest() {
-  for(int i = 0; i < totalCandy.size(); i++) { 
-    totalCandy.get(i).print();
-   } 
-  }
-*/
-
-
 
 //print out how much of each candy you have (ex: 5 Twix)
 void printNumCandies(){
   Candy candies = new Candy();
-  int counter[] = new int[7];
-//for loop here
+  
+    int counter[] = new int[7];
+    //for loop here
 
     if (candies.getBrand().equals("Kit Kat")){ counter[0]++;}
     if (candies.getBrand().equals("Milky Way")){ counter[1]++;}
@@ -110,3 +101,11 @@ void printNumCandies(){
 
 
 
+
+/*
+void printTest() {
+  for(int i = 0; i < totalCandy.size(); i++) { 
+    totalCandy.get(i).print();
+   } 
+  }
+*/

@@ -17,7 +17,21 @@ class Main {
     myPillowcase.getCandy();
     myPillowcase.getCandy();
    
+   
+    for (int i = 0; i < myPillowcase.getCount(); i++ ){
+        myPillowcase.getCandy();
+    }
 
+    //for (type variableName : arrayName) {
+  // code block to be executed
+    
+
+   // String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    //for (String i : cars) {
+    //  System.out.println(i);
+    
+
+  //myPillowcase.getCount = Scanner(System.in);
 
   /*
   void printTest() {
@@ -26,7 +40,6 @@ class Main {
    } 
   }
   */
-  
   myPillowcase.printNumCandies();
-  }
-}
+  
+  }}
