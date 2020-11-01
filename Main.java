@@ -1,3 +1,9 @@
+/**
+* This class is the Main java. This program is a model for trick or treating
+* @author Jiun Kim, Angela Lopez, Lauren Horton
+* @version 10.28.2020
+*/
+
 import java.util.Scanner;
 
 class Main {
@@ -11,35 +17,11 @@ class Main {
 
 
     Pillowcase myPillowcase = new Pillowcase();
-    myPillowcase.getCandy(); //Kit Kat
-    myPillowcase.getCandy(); //
-    myPillowcase.getCandy();
-    myPillowcase.getCandy();
-    myPillowcase.getCandy();
-   
-   
-    for (int i = 0; i < myPillowcase.getCount(); i++ ){
+
+    for (int i = 0; i < num; i++ ){
         myPillowcase.getCandy();
     }
 
-    //for (type variableName : arrayName) {
-  // code block to be executed
-    
-
-   // String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-    //for (String i : cars) {
-    //  System.out.println(i);
-    
-
-  //myPillowcase.getCount = Scanner(System.in);
-
-  /*
-  void printTest() {
-    for(int i = 0; i < totalCandy.size(); i++) { 
-      totalCandy.get(i).print();
-   } 
-  }
-  */
   myPillowcase.printNumCandies();
   
   }}
